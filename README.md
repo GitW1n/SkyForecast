@@ -21,5 +21,10 @@ Windows:
 Download the latest Python release from the Python website.
 Run the installer and make sure to check "Add Python to PATH".
 
+2. Textual,requests:
+```
+   pip install textual requests
+```
+
 ## Completing the installation
 After completing all the steps you should have a fully working SkyForecast App.
