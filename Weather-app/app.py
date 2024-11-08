@@ -12,8 +12,8 @@ def get_weather(city: str, api_key: str):
             "city": city,
             "temperature": data["main"]["temp"], 
             "description": data["weather"][0]["description"], 
-            "humidity": data["main"]["humidity"], 
-            "wind_speed": data["wind"]["speed"] 
+            "humidity": data["main"]["humidity"],
+            "wind_speed": data["wind"]["speed"]
         }
         return weather
     else:
