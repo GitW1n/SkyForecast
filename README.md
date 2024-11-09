@@ -17,7 +17,7 @@ brew install python
 Windows:
 (https://www.python.org/)
 Download the latest Python release from the Python website.
-Run the installer and make sure to check "Add Python to PATH".
+Run the installer and make sure to check "Add Python to PATH" .
 
 2. Textual,requests:
 ```
