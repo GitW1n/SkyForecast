@@ -6,7 +6,7 @@
 ### Installation steps
 1. Python
 To install use:
-For Ubuntu/Debian/kali:
+For Ubuntu/Debian/kali linux:
 ```
 sudo apt install python3 python3-pip
 ```
