@@ -57,7 +57,7 @@ class WeatherApp(App):
 
 if __name__ == "__main__":
     api_key = int(input('API:'))
-    city = "London" # change if you want
+    city = "London"
     app = WeatherApp(api_key, city)
     app.run()
 
