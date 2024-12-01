@@ -32,7 +32,7 @@ def main(page):
                 
                 result_text.value = f"City: {city}\nTemperature: {temp}°C\nWeather: {weather_desc}\nHumidity: {humidity}%\nWind speed: {wind_speed} m/s"
             else:
-                result_text.value = "Город не найден. Попробуйте ещё раз."
+                result_text.value = "City not found. Try again."
         except Exception as ex:
             result_text.value = f"Ошибка при получении данных: {ex}"
         
