@@ -31,4 +31,40 @@ def main(page):
                 
                 
                 result_text.value = f"Город: {city}\nТемпература: {temp}°C\nПогода: {weather_desc}\nВлажность: {humidity}%\nСкорость ветра: {wind_speed} м/с"
-            
+            else:
+                result_text.value = "Город не найден. Попробуйте ещё раз."
+        except Exception as ex:
+            result_text.value = f"Ошибка при получении данных: {ex}"
+        
+        page.update()
+
+    def change_theme(e):
+        page.theme_mode = 'light' if page.theme_mode == 'dark' else 'dark'
+        page.update()
+
+    
+    theme_button = ft.IconButton(icon=ft.icons.SUNNY, on_click=change_theme)
+    header = ft.Text('Weather App', size=20)
+
+    
+    page.add(
+        ft.Row(
+            [theme_button, header],
+            alignment=ft.MainAxisAlignment.CENTER
+        ),
+        ft.Row(
+            [user_data],
+            alignment=ft.MainAxisAlignment.CENTER
+        ),
+        ft.Row(
+            [ft.ElevatedButton(text='Получить', on_click=get_info)],
+            alignment=ft.MainAxisAlignment.CENTER
+        ),
+        ft.Row(
+            [result_text],
+            alignment=ft.MainAxisAlignment.CENTER
+        )
+    )
+
+
+ft.app(target=main, view=ft.AppView.WEB_BROWSER)
