@@ -30,7 +30,7 @@ def main(page):
                 wind_speed = data['wind']['speed']
                 
                 
-                result_text.value = f"Город: {city}\nТемпература: {temp}°C\nПогода: {weather_desc}\nВлажность: {humidity}%\nСкорость ветра: {wind_speed} м/с"
+                result_text.value = f"City: {city}\nTemperature: {temp}°C\nWeather: {weather_desc}\nHumidity: {humidity}%\nWind speed: {wind_speed} m/s"
             else:
                 result_text.value = "Город не найден. Попробуйте ещё раз."
         except Exception as ex:
