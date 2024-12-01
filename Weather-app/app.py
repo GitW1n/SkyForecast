@@ -34,7 +34,7 @@ def main(page):
             else:
                 result_text.value = "City not found. Try again."
         except Exception as ex:
-            result_text.value = f"Ошибка при получении данных: {ex}"
+            result_text.value = f"Error retrieving data: {ex}"
         
         page.update()
 
