@@ -17,4 +17,18 @@ def main(page):
         
         API = 'f91a2b525491521109dd34d4f8132567'
         URL = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={API}&units=metric'
-
+        
+        try:
+            response = requests.get(URL)
+            data = response.json()
+            
+            if response.status_code == 200:
+                
+                temp = data['main']['temp']
+                weather_desc = data['weather'][0]['description']
+                humidity = data['main']['humidity']
+                wind_speed = data['wind']['speed']
+                
+                
+                result_text.value = f"Город: {city}\nТемпература: {temp}°C\nПогода: {weather_desc}\nВлажность: {humidity}%\nСкорость ветра: {wind_speed} м/с"
+            
