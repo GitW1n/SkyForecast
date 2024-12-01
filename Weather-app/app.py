@@ -11,7 +11,7 @@ def main(page):
     def get_info(e):
         city = user_data.value
         if not city:
-            result_text.value = "Пожалуйста, введите название города."
+            result_text.value = "Please enter the name of the city."
             page.update()
             return
         
