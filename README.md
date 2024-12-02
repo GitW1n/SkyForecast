@@ -19,7 +19,7 @@ Windows:
 Download the latest Python release from the Python website.
 Run the installer and make sure to check "Add Python to PATH".
 
-2. Textual,requests:
+2. Flet,requests:
 ```
    pip install textual requests
 ```
