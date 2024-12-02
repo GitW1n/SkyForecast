@@ -1,6 +1,6 @@
 ## SkyForecast
 
- 
+ A weather app using weatherAPI
 
 ## Installation
 
