@@ -21,7 +21,7 @@ Run the installer and make sure to check "Add Python to PATH".
 
 2. Flet,requests:
 ```
-   pip install textual requests
+   pip install flet requests
 ```
 
 ## Completing the installation
